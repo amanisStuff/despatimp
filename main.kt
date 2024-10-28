@@ -12,11 +12,22 @@ import factpat.vehicle
 import sngtnpat.feedBox
 import bldrpat.baker
 import bldrpat.cake
+import prttppat.Cell
 
 
 
 fun main(args: Array<String>) {
     
+
+    
+}
+fun prttpTest(){
+    val cell1:Cell=Cell.mitosis(true)
+    val cell2:Cell=Cell.mitosis()
+    val cell3:Cell=Cell.mitosis()
+    cell1.intro()
+    cell2.intro()
+    cell3.intro()
 }
 
 fun bldrTest(): Unit {
