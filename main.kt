@@ -14,11 +14,15 @@ import bldrpat.baker
 import bldrpat.cake
 import prttppat.Cell
 import dcrtrpat.*
+import cmdpat.*
 
 
 
 fun main(args: Array<String>) {
-
+    val ship = SpaceShip()
+    val cmd1:command = takeOffCMD(ship)
+    val spaceCap= captain()
+    spaceCap.invoke(cmd1)
 }
 fun prttpTest(){
     val cell1:Cell=Cell.mitosis(true)

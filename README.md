@@ -10,6 +10,6 @@
 - Builder pattern [done]
 - Prototype pattern [done]
 - The decorator pattern [done]
-- Command pattern
+- Command pattern [done]
 - Adapter pattern
 - The facade pattern
