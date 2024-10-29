@@ -9,10 +9,7 @@
 - Singleton pattern [done]
 - Builder pattern [done]
 - Prototype pattern [done]
-- The decorator pattern
+- The decorator pattern [done]
 - Command pattern
 - Adapter pattern
 - The facade pattern
--
--
--

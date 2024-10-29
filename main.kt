@@ -13,13 +13,12 @@ import sngtnpat.feedBox
 import bldrpat.baker
 import bldrpat.cake
 import prttppat.Cell
+import dcrtrpat.*
 
 
 
 fun main(args: Array<String>) {
-    
 
-    
 }
 fun prttpTest(){
     val cell1:Cell=Cell.mitosis(true)
@@ -28,6 +27,14 @@ fun prttpTest(){
     cell1.intro()
     cell2.intro()
     cell3.intro()
+}
+fun dcrtrTest(): Unit {
+    val pie_order: Pie= Apple(Orange(Cheese(plainPie())))
+    
+    println(pie_order.getdescription())
+    println(pie_order.getCost())
+    
+    
 }
 
 fun bldrTest(): Unit {
