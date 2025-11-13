@@ -15,6 +15,9 @@ import bldrpat.cake
 import prttppat.Cell
 import dcrtrpat.*
 import cmdpat.*
+import adppat.carToRailCar
+import adppat.*
+import adppat.RailCar
 
 
 
@@ -24,6 +27,26 @@ fun main(args: Array<String>) {
     val spaceCap= captain()
     spaceCap.invoke(cmd1)
 }
+fun adppat(){
+    val car = adppat.car(100, 200)
+    val car2 = adppat.car(120, 200)
+    val adapter = carToRailCar(car)
+    val railCar = adapter.getRailCar()
+    val adapter2 = carToRailCar(car2)
+    val railCar2 = adapter2.getRailCar()
+    val car3 = RailCar(400);
+    val train = train()
+    train.addCar(railCar)
+    println("Total weight of train: ${train.getTotalwheight()} kg")
+
+    train.addCar(railCar2)
+    
+    println("Total weight of train: ${train.getTotalwheight()} kg")
+    train.addCar(car3)
+    
+    println("Total weight of train: ${train.getTotalwheight()} kg")
+    
+} 
 fun prttpTest(){
     val cell1:Cell=Cell.mitosis(true)
     val cell2:Cell=Cell.mitosis()
