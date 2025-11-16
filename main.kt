@@ -24,7 +24,14 @@ import tmpltpat.*
 
 
 fun main(args: Array<String>) {
-    tmplttest()
+    ittrpat();
+}
+fun ittrpat(){
+    val centapide = ittrpat.centapide()
+    centapide.addsegment()
+    centapide.addsegment()
+    centapide.Iterate { segment -> println("Segment has ${segment.legs} legs") }
+    println("Centapide length: ${centapide.get_length()}")
 }
 fun tmplttest(){
     val chef: ChefTemplate = frenchchef();
