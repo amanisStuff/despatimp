@@ -18,11 +18,19 @@ import cmdpat.*
 import adppat.carToRailCar
 import adppat.*
 import adppat.RailCar
+import fsadpat.LabFacade
+import tmpltpat.*
 
 
 
 fun main(args: Array<String>) {
-    adppat()
+    tmplttest()
+}
+fun tmplttest(){
+    val chef: ChefTemplate = frenchchef();
+    chef.cookMeal()
+    val italianChef: ChefTemplate = ItalianChef()
+    italianChef.cookMeal()
 }
 fun cmdtest(){
     val ship = SpaceShip()
@@ -63,10 +71,11 @@ fun dcrtrTest(): Unit {
     
     println(pie_order.getdescription())
     println(pie_order.getCost())
-    
-    
 }
-
+fun fsadpatTest(){
+    val labfacade =  LabFacade()
+    labfacade.conductFullResearchCycle()
+}
 fun bldrTest(): Unit {
     val bkr = baker()
     val cake1:cake =bkr.makeCake("vanilla", "red", "birth-day")

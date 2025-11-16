@@ -12,7 +12,7 @@
 - The decorator pattern [done]
 - Command pattern [done]
 - Adapter pattern [done]
-- The facade pattern
+- The facade pattern [done]
 - The bridge pattern
-- The Template method pattern
+- The Template method pattern [done]
 - The Iterator pattern
