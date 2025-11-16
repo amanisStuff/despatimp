@@ -15,4 +15,4 @@
 - The facade pattern [done]
 - The bridge pattern
 - The Template method pattern [done]
-- The Iterator pattern
+- The Iterator pattern [done]
