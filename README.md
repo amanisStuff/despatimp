@@ -11,5 +11,8 @@
 - Prototype pattern [done]
 - The decorator pattern [done]
 - Command pattern [done]
-- Adapter pattern
+- Adapter pattern [done]
 - The facade pattern
+- The bridge pattern
+- The Template method pattern
+- The Iterator pattern
