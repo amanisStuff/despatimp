@@ -20,13 +20,32 @@ import adppat.*
 import adppat.RailCar
 import fsadpat.LabFacade
 import tmpltpat.*
+import cmptpat.*
 
 
 
 fun main(args: Array<String>) {
-    ittrpat();
+    cmptpatTest();
 }
-fun ittrpat(){
+fun cmptpatTest() {
+    val story:document = document()
+    val page: page = page()
+    val page2: page = page()
+    story.add(page)
+    story.add(page2)
+    
+    page.add(paragraph())
+    page.add(paragraph())
+    page.add(paragraph())
+    page.add(paragraph())
+    page.add(paragraph())
+    page2.add(paragraph())
+    page2.add(paragraph())
+    
+    story.print()
+    
+}
+fun ittrpatTest(){
     val centapide = ittrpat.centapide()
     centapide.addsegment()
     centapide.addsegment()

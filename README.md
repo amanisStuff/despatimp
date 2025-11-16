@@ -16,3 +16,4 @@
 - The bridge pattern
 - The Template method pattern [done]
 - The Iterator pattern [done]
+- Composite pattern [done]
