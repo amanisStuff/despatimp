@@ -1,0 +1,8 @@
+# ignore system files
+.DS_Store
+Thumbs.db
+# ignore build artifacts
+/target/
+/bin/
+.idea/
+.vscode/

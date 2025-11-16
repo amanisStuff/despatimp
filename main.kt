@@ -22,6 +22,9 @@ import adppat.RailCar
 
 
 fun main(args: Array<String>) {
+    adppat()
+}
+fun cmdtest(){
     val ship = SpaceShip()
     val cmd1:command = takeOffCMD(ship)
     val spaceCap= captain()
