@@ -6,3 +6,6 @@ Thumbs.db
 /bin/
 .idea/
 .vscode/
+# jave and java files
+*.jar
+*.class
