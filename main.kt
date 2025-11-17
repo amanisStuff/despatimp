@@ -21,11 +21,33 @@ import adppat.RailCar
 import fsadpat.LabFacade
 import tmpltpat.*
 import cmptpat.*
+import flwhtpat.*
 
 
 
 fun main(args: Array<String>) {
-    cmptpatTest();
+    flwhtpatTest();
+}
+fun flwhtpatTest(){
+    val fly1:fly = fly("red", "buzz")
+    val fly2:fly = fly("green", "bzzzzzzzz")
+    val fly3:fly = fly("purple", "buzzbuzzbuzz")
+    // create a list of 100 flying flies
+    val flyingFlies = mutableListOf<flyingFly>()
+    for (i in 1..100) {
+        val randomFly = when ((0..2).random()) {
+            0 -> fly1
+            1 -> fly2
+            else -> fly3
+        }
+        flyingFlies.add(flyingFly(randomFly, (0..100).random(), (0..100).random(), (1..10).random()))
+    }
+
+    // make them move
+    for (fly in flyingFlies) {
+        fly.move()
+    }
+    
 }
 fun cmptpatTest() {
     val story:document = document()

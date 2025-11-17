@@ -17,3 +17,6 @@
 - The Template method pattern [done]
 - The Iterator pattern [done]
 - Composite pattern [done]
+- flyheight pattern [done]
+- Memento pattern
+- state pattern
